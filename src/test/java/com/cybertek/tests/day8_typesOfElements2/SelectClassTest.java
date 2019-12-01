@@ -18,11 +18,11 @@ public class SelectClassTest {
         driver.get("http://practice.cybertekschool.com/dropdown");
 
         //1.locate the dropdown with unique element
-        WebElement dropdownElement = driver.findElement(By.id("state"));
+       // WebElement dropdownElement = driver.findElement(By.id("state"));
 
 
         //create Select object by passing the element as a constructor
-        Select stateList = new Select(dropdownElement);
+        Select stateList = new Select(driver.findElement(By.id("state")));//lazy way
 
         // verify that first option is "select a state"
         String expectedOption = "Select a State";
