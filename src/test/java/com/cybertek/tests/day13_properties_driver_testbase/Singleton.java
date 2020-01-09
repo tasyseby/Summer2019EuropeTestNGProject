@@ -9,6 +9,7 @@ public class Singleton {
     private static String str;
 
     public static String getInstance(){
+        //it has only one instance only
         //if str has no value, initialize it and return it
         if(str==null){
             System.out.println("str is null. assigning value to it ");

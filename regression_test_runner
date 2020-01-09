@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Vytrack automation" verbose="1">
+    <!-- how to run all test batch run //<package name=".*"></package>   verbose changing value from 1 to 10 ex you get more details controlling log reports -->
+    <test name ="Vytrack regressio0nn">
+       <packages>
+
+           <package name="com.cybertek.tests.day13_properties_driver_testbase"></package>
+           <package name="com.cybertek.tests.day14_pom_tests"></package>
+
+
+       </packages>
+
+        <classes>
+
+            <class name="com.cybertek.tests.day13_properties_driver_testbase.Singleton"></class>
+
+
+        </classes>
+    </test>
+</suite>
